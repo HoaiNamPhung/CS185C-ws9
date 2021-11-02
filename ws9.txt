@@ -1,0 +1,26 @@
+I created a shell script "randomsample.sh" with the following contents:
+
+#!/bin/bash
+numregex="^[0-9]+$";
+if [[ -z $1 || "$1" =~ ^[^[0-9]+]$ || $1 -le 0 || $1 -ge 100 ]];
+then echo "Error: $1 is an invalid integer between 1 and 99." >&2; exit 1;
+fi;
+if [ -z $2 ];
+then echo "Error: Missing input file for 2nd parameter.";
+fi;
+# echo $1% of the lines in the input file.
+while read line;
+do
+        if [ $(($RANDOM % 100)) -le $1 ];
+        then echo "$line";
+        fi;
+done < $2;
+exit 0;
+
+I then ran the shell script--which given the current arguments would print 99% of my amazon dataset's lines randomly--using the following commands:
+
+db=./amazon_reviews_us_Books_v1_02.tsv;
+chmod 777 randomsample.sh
+./randomsample.sh "99" "$db"
+
+The first argument, "99", can be changed with any integer between 1 and 99 to indicate a percentage of the file to print. The second argument, $db, can be changed to be another file that has multiple lines in it.

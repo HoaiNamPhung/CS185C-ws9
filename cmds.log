@@ -1,0 +1,95 @@
+ 1981  tmux attach-session -t a4
+ 1982  tmux new-session -s a4
+ 1983  ls
+ 1984  ls ~/
+ 1985  db=
+ 1986  db=amazon_reviews_us_Books_v1_02.tsv
+ 1987  echo "$db"
+ 1988  touch randomsample.sh
+ 1989  vi randomsample.sh
+ 1990  ls
+ 1991  chmod 777 randomsample.sh
+ 1992  randomsample.sh 3 "$db"
+ 1993  randomsample.sh < 3 "$db"
+ 1994  randomsample.sh < "3" "$db"
+ 1995  ./randomsample.sh "3" "$db"
+ 1996  vi randomsample.sh
+ 1997  ./randomsample.sh "3" "$db"
+ 1998  vi randomsample.sh
+ 1999  ./randomsample.sh "3" "$db"
+ 2000  vi randomsample.sh
+ 2001  ./randomsample.sh "3" "$db"
+ 2002  vi randomsample.sh
+ 2003  ./randomsample.sh "3" "$db"
+ 2004  vi randomsample.sh
+ 2005  ./randomsample.sh "3" "$db"
+ 2006  vi randomsample.sh
+ 2007  ./randomsample.sh "3" "$db"
+ 2008  vi randomsample.sh
+ 2009  ./randomsample.sh "3" "$db"
+ 2010  vi randomsample.sh
+ 2011  ./randomsample.sh "3" "$db"
+ 2012  vi randomsample.sh
+ 2013  ./randomsample.sh "3" "$db"
+ 2014  vi randomsample.sh
+ 2015  ./randomsample.sh "3" "$db"
+ 2016  vi randomsample.sh
+ 2017  ./randomsample.sh "3" "$db"
+ 2018  vi randomsample.sh
+ 2019  ./randomsample.sh "3" "$db"
+ 2020  [3 -le 0]
+ 2021  if [3 -le 0]; then echo "cool"
+ 2022  if [3 -le 0]; then echo "cool"; fi;
+ 2023  if [[3 -le 0]]; then echo "cool"; fi;
+ 2024  vi randomsample.sh
+ 2025  ./randomsample.sh "3" "$db"
+ 2026  vi randomsample.sh
+ 2027  ./randomsample.sh "3" "$db"
+ 2028  vi randomsample.sh
+ 2029  ./randomsample.sh "3" "$db"
+ 2030  vi randomsample.sh
+ 2031  ./randomsample.sh "3" "$db"
+ 2032  vi randomsample.sh
+ 2033  ./randomsample.sh "3" "$db"
+ 2034  vi randomsample.sh
+ 2035  ./randomsample.sh "3" "$db"
+ 2036  vi randomsample.sh
+ 2037  ./randomsample.sh "3" "$db"
+ 2038  vi randomsample.sh
+ 2039  ./randomsample.sh "3" "$db"
+ 2040  vi randomsample.sh
+ 2041  ./randomsample.sh "3" "$db"
+ 2042  vi randomsample.sh
+ 2043  ./randomsample.sh "3" "$db"
+ 2044  vi randomsample.sh
+ 2045  ./randomsample.sh "3" "$db"
+ 2046  vi randomsample.sh
+ 2047  ./randomsample.sh "3" "$db"
+ 2048  vi randomsample.sh
+ 2049  ./randomsample.sh "3" "$db"
+ 2050  vi randomsample.sh
+ 2051  ./randomsample.sh "3" "$db"
+ 2052  vi randomsample.sh
+ 2053  ./randomsample.sh "3" "$db"
+ 2054  db
+ 2055  echo $db
+ 2056  db=~/
+ 2057  amazon_reviews_us_Books_v1_02.tsv
+ 2058  db=~/amazon_reviews_us_Books_v1_02.tsv
+ 2059  ./randomsample.sh "3" "$db"
+ 2060  vi randomsample.sh
+ 2061  ./randomsample.sh "1" "$db"
+ 2062  vi randomsample.sh
+ 2063  ./randomsample.sh "1" "$db"
+ 2064  ./randomsample.sh "2" "$db"
+ 2065  vi randomsample.sh
+ 2066  ./randomsample.sh "2" "$db"
+ 2067  vi randomsample.sh
+ 2068  ./randomsample.sh "2" "$db"
+ 2069  vi randomsample.sh
+ 2070  ./randomsample.sh "2" "$db"
+ 2071  vi randomsample.sh
+ 2072  ./randomsample.sh "2" "$db"
+ 2073  ./randomsample.sh "1" "$db"
+ 2074  ./randomsample.sh "10" "$db"
+ 2075  history > cmds.log
